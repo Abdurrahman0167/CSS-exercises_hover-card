@@ -422,6 +422,133 @@ body{
     transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
   }
 
+@media(max-width: 500px){
+    .tr-1:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+      }
+      
+      .tr-2:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+      }
+      
+      .tr-3:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+      }
+      
+      .tr-4:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+      }
+      
+      .tr-5:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+      }
+      
+      .tr-6:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+      }
+      
+      .tr-7:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+      }
+      
+      .tr-8:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+      }
+      
+      .tr-9:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+      }
+      
+      .tr-10:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+      }
+      
+      .tr-11:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+      }
+      
+      .tr-12:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+      }
+      
+      .tr-13:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      
+      .tr-14:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+      }
+      
+      .tr-15:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+      }
+      
+      .tr-16:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+      }
+      
+      .tr-17:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+      }
+      
+      .tr-18:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+      }
+      
+      .tr-19:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+      }
+      
+      .tr-20:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+      }
+      
+      .tr-21:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+      }
+      
+      .tr-22:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+      }
+      
+      .tr-23:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+      }
+      
+      .tr-24:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+      }
+      
+      .tr-25:active ~ .art {
+        transition: 125ms ease-in-out;
+        transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+      }
+  }
+
 .container {
   -webkit-touch-callout: none;
    /* iOS Safari */
