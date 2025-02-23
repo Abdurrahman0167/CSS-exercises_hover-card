@@ -1,0 +1,423 @@
+body{
+    background: #000;
+}
+
+.center {
+     display: flex;
+     width: 100vw;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .art {
+     font-size: 10px;
+     background: linear-gradient(133deg, rgba(246, 4, 4, 1) 0%, rgba(220, 95, 17, 1) 40%, rgba(229, 159, 17, 1) 100%);
+     width: 100%;
+     height: 100%;
+     border-radius: 10%;
+     overflow: hidden;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     transition: 700ms;
+     inset: 0;
+     z-index: 0;
+
+ }
+
+ .sun,
+ .sun__light1,
+ .sun__light2,
+ .sun__light3,
+ .sun__light4 {
+     border-radius: 50%;
+ }
+
+ .sun__light1,
+ .sun__light2,
+ .sun__light3,
+ .sun__light4 {
+     background: inherit;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 0.3;
+     z-index: 1;
+
+ }
+
+ .sun {
+     width: 18%;
+     height: 18%;
+     background-color: #fff;
+     position: absolute;
+     top: 15em;
+     left: 60%;
+     z-index: 5;
+ }
+
+ .sun__light1 {
+     width: 180%;
+     height: 180%;
+     z-index: 4;
+ }
+
+ .sun__light2 {
+     width: 310%;
+     height: 310%;
+     z-index: 3;
+
+ }
+
+ .sun__light3 {
+     width: 450%;
+     height: 450%;
+     z-index: 2;
+ }
+
+ .sun__light4 {
+     width: 600%;
+     height: 600%;
+     z-index: 1;
+ }
+
+ .mountain1,
+ .mountain2,
+ .mountain3 {
+     width: 50%;
+     height: 70%;
+     position: absolute;
+     opacity: 1;
+     transform: translate(-50%);
+     width: 0;
+     height: 0;
+     border-left: 180px solid transparent;
+     border-right: 180px solid transparent;
+     border-bottom: 210px solid #263036;
+ }
+
+ .mountain2,
+ .mountain3 {
+     z-index: 7;
+ }
+
+ .mountain1 {
+     top: 48%;
+     left: 40%;
+     z-index: 6;
+ }
+
+ .mountain2 {
+     top: 35%;
+     left: 0%;
+     border-left: 200px solid transparent;
+     border-right: 200px solid transparent;
+     z-index: 8;
+
+ }
+
+ .mountain3 {
+     top: 60%;
+     left: 90%;
+
+     border-left: 190px solid transparent;
+     border-right: 190px solid transparent;
+     border-bottom: 150px solid #263036;
+     z-index: 7;
+ }
+
+
+
+ .line1,
+ .line2 {
+     background-color: #000;
+     width: 0;
+     height: 150px;
+     border: solid 1px #000;
+     position: absolute;
+ }
+
+ .line1 {
+     height: 64%;
+     top: 55%;
+     left: 48%;
+     transform: rotate(-43deg);
+     box-shadow: 5px -6px 12px 0 #000;
+     z-index: 8;
+ }
+
+ .line2 {
+     height: 46.5%;
+     top: 70.5%;
+     left: 48%;
+     transform: rotate(52deg);
+     box-shadow: -3px 1px 10px 0 #000;
+     z-index: 7;
+
+ }
+
+ /* 3d */
+
+ .container {
+     position: relative;
+     width: 320px;
+     height: 320px;
+     transition: 200ms;
+ }
+
+ .tracker {
+     position: absolute;
+     z-index: 200;
+     width: 100%;
+     height: 100%;
+ }
+
+ .tracker:hover~.art {
+     transition: 300ms;
+     filter: brightness(1.1);
+ }
+
+ .canvas {
+     perspective: 800px;
+     inset: 0;
+     z-index: 200;
+     position: absolute;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     gap: 0px 0px;
+     grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+    "tr-6 tr-7 tr-8 tr-9 tr-10"
+    "tr-11 tr-12 tr-13 tr-14 tr-15"
+    "tr-16 tr-17 tr-18 tr-19 tr-20"
+    "tr-21 tr-22 tr-23 tr-24 tr-25";
+ }
+
+ .tr-1 {
+    grid-area: tr-1;
+  }
+  
+  .tr-2 {
+    grid-area: tr-2;
+  }
+  
+  .tr-3 {
+    grid-area: tr-3;
+  }
+  
+  .tr-4 {
+    grid-area: tr-4;
+  }
+  
+  .tr-5 {
+    grid-area: tr-5;
+  }
+  
+  .tr-6 {
+    grid-area: tr-6;
+  }
+  
+  .tr-7 {
+    grid-area: tr-7;
+  }
+  
+  .tr-8 {
+    grid-area: tr-8;
+  }
+  
+  .tr-9 {
+    grid-area: tr-9;
+  }
+  
+  .tr-10 {
+    grid-area: tr-10;
+  }
+  
+  .tr-11 {
+    grid-area: tr-11;
+  }
+  
+  .tr-12 {
+    grid-area: tr-12;
+  }
+  
+  .tr-13 {
+    grid-area: tr-13;
+  }
+  
+  .tr-14 {
+    grid-area: tr-14;
+  }
+  
+  .tr-15 {
+    grid-area: tr-15;
+  }
+  
+  .tr-16 {
+    grid-area: tr-16;
+  }
+  
+  .tr-17 {
+    grid-area: tr-17;
+  }
+  
+  .tr-18 {
+    grid-area: tr-18;
+  }
+  
+  .tr-19 {
+    grid-area: tr-19;
+  }
+  
+  .tr-20 {
+    grid-area: tr-20;
+  }
+  
+  .tr-21 {
+    grid-area: tr-21;
+  }
+  
+  .tr-22 {
+    grid-area: tr-22;
+  }
+  
+  .tr-23 {
+    grid-area: tr-23;
+  }
+  
+  .tr-24 {
+    grid-area: tr-24;
+  }
+  
+  .tr-25 {
+    grid-area: tr-25;
+  }
+ 
+ .tr-1:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-2:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-3:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-4:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-5:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-6:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-7:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-8:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-9:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-10:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-11:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-12:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-13:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-14:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-15:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-16:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-17:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-18:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-19:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-20:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-21:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-22:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-23:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-24:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-25:hover ~ .art {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+  }
